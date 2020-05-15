@@ -1,11 +1,8 @@
 <mat-card>
-  <div class="title">
+  <div class="title" routerLink=''>
     <mat-card-title class="title-text"><b>{{title}}</b></mat-card-title>
     <mat-card-subtitle>An Internet Forum</mat-card-subtitle>
   </div>
-  <div class="loginRegMenu">
-    <button mat-raised-button class="button" color="accent">Login</button>
-    <button mat-raised-button color="primary">Register</button>
-  </div>
+  <app-login-menu></app-login-menu>
 </mat-card>
 <router-outlet></router-outlet>

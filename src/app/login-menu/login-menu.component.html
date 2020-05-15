@@ -1,0 +1,8 @@
+<div *ngIf="!loginStatus" class="loginRegMenu">
+    <button mat-raised-button class="button loginButton" color="accent" routerLink="/login">Login</button>
+    &nbsp;
+    <button mat-raised-button color="primary">Register</button>
+</div>
+<div *ngIf="loginStatus" class="loginRegMenu">
+    <button mat-raised-button class="button" color="primary" routerLink="/register">{{username}}</button>
+</div>
